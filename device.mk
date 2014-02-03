@@ -38,7 +38,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.setupwizard.enable_bypass=1 \
 	ro.media.dec.jpeg.memcap=20000000 \
 	dalvik.vm.lockprof.threshold=500 \
-	dalvik.vm.dexopt-flags=m=y \
+	dalvik.vm.dexopt-flags=m=y,u=y \
         ro.product.multi_touch_enabled=true \
         ro.product.max_num_touch=5 \
         ro.com.google.gmsversion=2.3_r4

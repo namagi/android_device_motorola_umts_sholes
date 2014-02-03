@@ -99,7 +99,7 @@ persist.sys.scrollingcache=2
 # to automatically report your location (bye bye, free RAM)
 persist.sys.gmaps_hack=1
 
-windowsmgr.max_events_per_sec=60
+windowsmgr.max_events_per_sec=90
 
 # The interfaces to get DNS data from when using mobile data, comma-separated
 mobiledata.interfaces=rmnet0
@@ -115,4 +115,16 @@ aplogd.collect.main=1
 aplogd.collect.kernel=1
 aplogd.collect.radio=1
 aplogd.collect.events=1
+
+# Disables JIT
+#dalvik.vm.execution-mode=int:fast
+# Enables JIT
+dalvik.vm.execution-mode=int:jit
+
+ro.kernel.android.checkjni=0
+ro.kernel.checkjni=0
+dalvik.vm.checkjni=false
+ro.config.nocheckin=1
+dalvik.vm.verify-bytecode=false
+persist.sys.use_dithering=0
 
